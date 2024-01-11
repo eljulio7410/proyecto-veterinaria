@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Agregar nueva mascota</h4>
+        <form (submit)="agregarPersonaje()" class="mb-4">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" [(ngModel)]="nuevoPersonaje.name" class="form-control" required>
+          </div>
+  
+          <div class="mb-3">
+            <label for="poder" class="form-label">Poder:</label>
+            <input type="number" id="poder" name="poder" [(ngModel)]="nuevoPersonaje.power" class="form-control" required>
+          </div>
+  
+          <button type="submit" class="btn btn-primary">Agregar Personaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
